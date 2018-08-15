@@ -1,0 +1,265 @@
+/* Guitar image animation */
+.flicker-enter {
+  animation: flicker, shake;
+  animation-duration: .5s, .7s;
+  animation-timing-function: linear, ease-in-out;
+}
+
+.flicker-leave {
+  animation: flicker, shake;
+  animation-duration: .5s, .7s;
+  animation-timing-function: linear, ease-in-out;
+}
+
+/* Guitar info animation */
+.fade-enter {
+  opacity: 0;
+  transform: scale(.5);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: .5s;
+}
+
+/* Title page text animation */
+.animationInOut-enter {
+  animation: animation-in .8s;
+}
+
+.animationInOut-leave {
+  animation: animation-out .8s;
+}
+
+/* Contact logo animation */
+.logo-white-enter {
+  animation: spin .5s;
+}
+
+/* Like animation */
+.like {
+  width: 50px;
+  height: 50px;
+  background-image: url(../res/like.png);
+  background-size: 1450px 50px;
+  position: fixed;
+  bottom: -100px;
+}
+
+.like.is-liked {
+  animation-name: like, move;
+  animation-duration: .8s, 5s;
+  animation-timing-function: steps(28), linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite, 1;
+}
+
+@keyframes like {
+  0% {
+    background-position: 0 0;
+  }
+  
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes move {
+  from {
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  to {
+    position: absolute;
+    bottom: 110%;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+  }
+
+  4% {
+    opacity: .5;
+  }
+
+  6% {
+    opacity: .45;
+  }
+
+  8% {
+    opacity: .55;
+  }
+
+  10% {
+    opacity: .45;
+  }
+
+  11% {
+    opacity: .5;
+  }
+
+  12% {
+    opacity: .65;
+  }
+
+  14% {
+    opacity: .55;
+  }
+
+  16% {
+    opacity: .70;
+  }
+
+  17% {
+    opacity: .55;
+  }
+
+  19% {
+    opacity: .5;
+  }
+
+  20% {
+    opacity: .5;
+  }
+
+  24% {
+    opacity: .5;
+  }
+
+  26% {
+    opacity: .69;
+  }
+
+  28% {
+    opacity: .5;
+  }
+
+  38% {
+    opacity: .45;
+  }
+
+  40% {
+    opacity: .5;
+  }
+
+  42% {
+    opacity: .6;
+  }
+
+  44% {
+    opacity: .5;
+  }
+
+  46% {
+    opacity: .5;
+  }
+
+  56% {
+    opacity: .5;
+  }
+
+  58% {
+    opacity: .75;
+  }
+
+  60% {
+    opacity: .5;
+  }
+
+  68% {
+    opacity: .5;
+  }
+
+  70% {
+    opacity: .6;
+  }
+
+  72% {
+    opacity: .5;
+  }
+
+  93% {
+    opacity: .5;
+  }
+  
+  95% {
+    opacity: .6;
+  }
+
+  97% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: .5;
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-1px);
+  }
+
+  20%, 80% {
+    transfrom: translateX(2px);
+  }
+
+  30%, 50%, 70% {
+    transform: translateX(-4px);
+  }
+
+  40%, 60% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: scale(0) rotate(180deg);
+  }
+
+  to {
+    transform: scale(1) rotate(1080deg);
+  }
+}
+
+@keyframes animation-in {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    transform: translateY(25px);
+  }
+
+  75% {
+    transform: translateY(-10px);
+  }
+
+  90% {
+    transform: translateY(5);
+  }
+}
+
+@keyframes animation-out {
+  10% {
+    transform: translateY(5);
+  }
+  
+  25% {
+    transform: translateY(-10px);
+  }
+  
+  40% {
+    transform: translateY(25px);
+  }
+
+  100% {
+    transform: translateY(-2000px);
+  }
+}

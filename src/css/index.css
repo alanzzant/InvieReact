@@ -1,0 +1,310 @@
+body {
+  font-family: 'Amaranth', sans-serif;
+  margin: 0
+}
+
+.container {
+  width: auto;
+  margin: auto;
+  max-width: 800px
+}
+
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: linear-gradient(to right, #ED472A, #F1681C);
+  cursor: pointer
+}
+
+.btn-nav {
+  cursor: pointer;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  height: 40px;
+  background-color: #28556e;
+  text-align: center;
+  display: inline-block;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  display: none
+}
+
+input,
+  textarea {
+    outline: 0
+  }
+
+input:focus, textarea:focus {
+  background-color: #DDD
+}
+
+#home {
+  position: relative
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 0
+}
+
+.nav {
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 30px
+}
+
+.nav li::before {
+  content: "⊸"
+}
+
+#title {
+  background-color: #3A566B;
+  background-image: url(../res/background.png);
+  background-size: cover;
+  color: #fff;
+  padding: 20px;
+  height: 500px
+}
+
+#title.is-animated {
+  background-image: url(../res/team-platzi.jpg);
+  background-repeat: no-repeat;
+  animation: platzi-background 15s linear infinite alternate;
+}
+
+@keyframes platzi-background {
+  0% {
+    background-size: 200%;
+    background-position: center;
+  }
+
+  20% {
+    background-position: right top;
+  }
+
+  40% {
+    background-size: 100%;
+    backgorund-position: center;
+  }
+
+  60% {
+    background-position: left top;
+  }
+
+  80% {
+    background-position: left -100px;
+  }
+
+  100% {
+    background-size: 200%;
+    background-position: right -100px;
+  }
+}
+
+#title a {
+  color: #fff;
+  text-decoration: none
+}
+
+#title p {
+  font-size: 24px;
+  margin-top: 0
+}
+
+#title h1 {
+  font-size: 70px;
+  margin-bottom: 15px;
+  margin-top: 70px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+#title button {
+  margin-bottom: 70px
+}
+
+.guitar {
+  margin: 10px 10px 30px 30px;
+  padding: 10px 2em;
+  border: 1px solid #0A5A6B;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  min-height: 200px;
+  position: relative;
+  transition: .3s;
+}
+
+.guitar:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+}
+
+.guitar:nth-of-type(even):hover {
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, .3);
+}
+
+.guitar:nth-of-type(even) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.guitar:nth-of-type(even) .guitar-img {
+  left: 0;
+  right: initial;
+}
+
+.guitar-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* .guitar-container {
+  margin-left: 370px;
+  position: relative;
+  bottom: 90px
+} */
+
+.guitar ol {
+  padding: 0;
+  list-style: none;
+  counter-reset: features;
+}
+
+.guitar li:before {
+  counter-increment: features;
+  content: counter(features) '. ';
+}
+
+#guitars {
+  color: #1F313C;
+  margin-bottom: 60px
+}
+
+
+#guitars h2 {
+  font-size: 35px
+}
+
+#guitars h3 {
+  font-size: 3em;
+  padding-bottom: .2em;
+  margin: 0 0 .2em;
+  border-bottom: 2px dashed #1F313C;
+}
+
+#footer {
+  background-color: #1F313C;
+  padding: 50px 10px;
+}
+
+#footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact img {
+  display: block;
+}
+
+.contact strong {
+  display: block;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 10px 10px 0
+}
+
+.form {
+  display: flex;
+  width: 400px;
+  color: #fff
+}
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column
+}
+
+.col1 {
+  margin-right: 15px
+}
+
+.col2 {
+  align-items: flex-start
+}
+
+.col2 .btn {
+  margin-top: 15px
+}
+
+.form label {
+  margin-bottom: 10px
+}
+
+.sex {
+  margin-top: 10px
+}
+
+.table {
+  margin: 50px 0
+}
+
+table {
+  width: 90%;
+  margin: auto
+}
+
+th {
+  background-color: #1F313C;
+  color: #fff
+}
+
+th, td {
+  padding: 20px
+}
+
+table, td {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  background-color: #1F313C;
+  color: #fff
+}
+
+th {
+  color: #fff;
+  background-color: #1b2a33;
+  border: 1px solid #fff;
+  font-size: 18px
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #title {
+    background-image: url(../res/background2x.png);
+    background-size: cover
+  }
+}
