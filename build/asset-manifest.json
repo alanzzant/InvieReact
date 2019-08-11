@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a2945816.chunk.css",
+    "main.js": "/static/js/main.d2f25a23.chunk.js",
+    "main.js.map": "/static/js/main.d2f25a23.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.fdeef067.js",
+    "runtime~main.js.map": "/static/js/runtime~main.fdeef067.js.map",
+    "static/js/2.3d3cee33.chunk.js": "/static/js/2.3d3cee33.chunk.js",
+    "static/js/2.3d3cee33.chunk.js.map": "/static/js/2.3d3cee33.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.00d7a9d5c05d7fa0e1e65519b8276f8d.js": "/precache-manifest.00d7a9d5c05d7fa0e1e65519b8276f8d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a2945816.chunk.css.map": "/static/css/main.a2945816.chunk.css.map",
+    "static/media/index.css": "/static/media/team-platzi.70297162.jpg",
+    "static/media/easter-a.png": "/static/media/easter-a.ba2e415e.png",
+    "static/media/easter-b.png": "/static/media/easter-b.7d7a81dc.png",
+    "static/media/invie-acustic.png": "/static/media/invie-acustic.25c6f861.png",
+    "static/media/invie-classic.png": "/static/media/invie-classic.e039fff9.png",
+    "static/media/animations.css": "/static/media/like.45598562.png"
+  }
+}
