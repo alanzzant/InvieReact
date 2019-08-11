@@ -1,13 +1,13 @@
 # InvieReact
 A version of Invie made with React.js and using animations :D
 
-## Where do you learn how to do this?
+## Where did you learn how to do this?
 In [platzi.com](https://platzi.com/cursos/animaciones-web/)
 
 ## How I made this?
 I made this using a part of the code of the Invie project
 
-## Why this is so special?
+## Why this is it so special?
 Cause it have a **Easter Egg** :D
 
 ## How do you made the Easter Egg?

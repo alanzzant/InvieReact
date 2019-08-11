@@ -29,8 +29,8 @@ const initialState = {
       title: 'Guitars'
     },
     {
-      href: 'prices.html',
-      title: 'Prices'
+      href: '#footer',
+      title: 'Contact'
     }
   ],
   logoTitlePage: logoTitlePage,
